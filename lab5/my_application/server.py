@@ -14,9 +14,9 @@ def hello():
 def userpaul(username):
 	return 'User %s' % username
 
-@app.route("/post/<port>")
-def post80(port):
-	return 'Post %s' % port
+@app.route("/post/<post>")
+def post80(post):
+	return 'Post %s' % post
 
 
 if __name__ == "__main__":
